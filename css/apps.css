@@ -1,0 +1,322 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+/* RESET CSS DONE */
+
+/* FONT */
+@font-face {
+    font-family: 'test';
+    src: url('montserratalternates-black-webfont.woff2') format('woff2'),
+         url('montserratalternates-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* FONT DONE*/
+
+/* Header */
+.header {
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../img/bg-head.jpg);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-attachment: scroll;
+  background-position: 0 0px;
+  background-size: cover;
+  padding: 30px;
+  padding-top: 80px;
+}
+
+.header img {
+	width: 200px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.75);
+}
+
+.img-profile {
+	border-radius: 50px;
+}
+
+.profile-text {
+	color: white;
+	text-shadow: 5px 5px 5px rgba(0,0,0,1);
+	font-family: century;
+}
+
+/* Header Done */
+
+/* NAVBAR */
+
+.navbar-brand {
+	color: red;
+	text-shadow: 5px 5px 5px rgba(0,0,0,.50);
+	font-family: arial;
+	font-weight: bold;
+	font-size: 30px;
+}
+.navbar-menu {
+	background: linear-gradient(#5A5555, #3E3C3C);
+}
+
+.navbar-menu li a{
+	color: white;
+	transition: .2s;
+	font-family: Calibri;
+	font-weight: bold;
+}
+
+.navbar-menu li a:hover,
+.navbar-menu li a:focus {
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+}
+
+.navbar-menu .navbar-toggle {
+  border-color: #ddd;
+}
+.navbar-menu .navbar-toggle:hover,
+.navbar-menu .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-menu .navbar-toggle .icon-bar {
+  background-color: #5A5555;
+}
+.navbar-menu .navbar-collapse,
+.navbar-menu .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-menu .navbar-link {
+  color: #5A5555;
+}
+.navbar-menu .navbar-link:hover {
+  color: #333;
+}
+.navbar-menu .btn-link {
+  color: #777;
+}
+.navbar-menu .btn-link:hover,
+.navbar-menu .btn-link:focus {
+  color: #333;
+}
+.navbar-menu .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-menu .btn-link:hover,
+.navbar-menu .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-menu .btn-link:focus {
+  color: #ccc;
+}
+
+
+/* Navbar Done */
+
+/* About */
+.about {
+  background-repeat: no-repeat;
+  background: linear-gradient(#DE2D2D, #E96868);
+  height: 100%;
+  background-attachment: scroll;
+  background-position: 0 0px;
+  background-size: cover;
+  padding: 10px;
+}
+
+.about h1 {
+	padding-top: 50px;
+	color: white;
+	font-family: Javanese Text;
+	text-shadow: 5px 5px 5px rgba(0,0,0,.75);
+}
+
+hr.line {
+  max-width: 100%;
+  border-width: 0.2rem;
+  border-color: #f4623a;
+  width: 200px;
+  margin-top: -10px;
+}
+
+hr.line-light {
+  max-width: 100%;
+  border-width: 0.2rem;
+  border-color: #F3E6E6;
+  width: 100px;
+  margin-top: -10px;
+}
+
+.text-about {
+	margin: 10px;
+	margin-bottom: 20px;
+}
+
+.text-about p {
+	color: #EFE6E6;
+	font-weight: bold;
+	text-align: center;
+}
+
+.btn-work {
+  color: #fff;
+  border-radius: 40px;
+  box-shadow: 5px 5px 5px 2px rgba(0,0,0,.50);
+  background-color: #2056D2;
+  border-color: #2056D2;
+  transition: .2s;
+  margin: 30px;
+}
+
+.btn-work:hover {
+	color: #E5D6D6;
+	border-color: #1F1C62;
+	background-color: #1F1C62;
+	box-shadow: 3px 3px 5px 1px rgba(0,0,0,.40);
+}
+
+/* About Done */
+
+/* Skills */
+.skills {
+  background-repeat: no-repeat;
+  background-color: #DED7D7;
+  height: 100%;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+
+.skills h1 {
+	padding-top: 50px;
+	color: black;
+	font-family: Javanese Text;
+	text-shadow: 5px 5px 5px rgba(255,255,255,.10);
+}
+
+.progress-skills {
+	margin-top: 50px;
+}
+/* Skills Done */
+
+/* Hobby */
+.hobby {
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../img/hobby.jpg);
+  background-repeat: no-repeat;
+  height: auto;
+  max-width: 100%
+  display: block;
+  background-attachment: scroll;
+  background-position: 0 0px;
+  background-size: cover;
+}
+
+.hobby h1 {
+	color: white;
+	padding-top: 50px;
+	text-shadow: 5px 5px 5px rgba(0,0,0,.84)
+}
+
+.thumbnail-hobby {
+	padding-top: 20px;
+	padding-bottom: 70px;
+}
+
+.img-hobby {
+	width: 400px;
+	height: 320px;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,.75);
+	border: 5px solid;
+	transition: .4s;
+}
+
+.img-hobby:hover {
+	box-shadow: 5px 5px 5px 7px rgba(0,0,0,.50);
+	color: #DF912B;	
+}
+/* End Hobby */
+
+/* Contact */
+.contact {
+  background-repeat: no-repeat;
+  background-color: #fff;
+  height: 100%;
+  padding-bottom: 50px;
+}
+.contact h1 {
+	padding-top: 50px;
+	color: black;
+	font-family: Javanese Text;
+	text-shadow: 5px 5px 5px rgba(255,255,255,.10);
+}
+
+.img-contact {
+	padding-left: 90px;
+}
+
+.img-contact img {
+	height: 220px;
+	width: 230px;
+	text-align: center;
+}
+
+.img-contact h2 {
+	font-size: 20px;
+}
+
+.line {
+	padding-left: 50px;
+}
