@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html id="home">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/apps.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+
 	<title>Portfolio</title>
 	<link rel="stylesheet" href="">
 </head>
@@ -23,17 +25,15 @@
 			        <span class="icon-bar"></span>      
 			        <span class="icon-bar"></span>      
 		      	</button>
-
-				<a href="" class="navbar-brand">Portfolio</a>
+		      	<a href="#home" class="navbar-brand page-scroll">Portfolio</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="target-list">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="">Home</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Skills</a></li>
-					<li><a href="">Hobby</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="#home" class="page-scroll">Home</a></li>
+					<li><a href="#about" class="page-scroll">About</a></li>
+					<li><a href="#hobby" class="page-scroll">Hobby</a></li>
+					<li><a href="#contact" class="page-scroll">Contact</a></li>
 				</ul>
 			</div>		
 
@@ -42,116 +42,178 @@
 	<!-- Navbar Done -->
 
 	<!-- Header -->
-	<div class="header text-center">
-		<center><img src="img/profile.jpg" class="img-profile img-responsive"></center>
-		<div class="profile-text">
-			<h1>Farhan Sabili</h1>
-			<p>Serang, 11 April 2000</p>
-			<p>IT Addict</p>
-		</div>	
+	<div class="header">
+		<div class="profile-text row">
+			<div class="col-md-12 col-xs-12">
+				<h1>Hi, I'm Billy</h1>
+				<p>IT ADDICT | MUSIC LISTENER</p>
+			</div>
+		</div>
 	</div>	
 	<!-- End Header -->
 
 	<!-- About -->
-	<div class="container-fluid about">
-		<h1 class="text-center">ABOUT ME</h1>
-		<hr class="line"></hr>
-		<div class="row container-fluid">
-			<div class="col-md-12 text-about">
-				<p>Sangat Tertarik di Bidang IT terutama Web Development</p>
-				<p>Hobi membaca buku, bermain dan mendengarkan musik</p>
-				<p>"Just do what you feel happy"</p>
+	<div class="container-fluid about" id="about">
+		<div class="row">
 
+			<div class="col-md-4 col-sm-4 col-xs-6">
+				<h1 class="text-center">ABOUT ME</h1>
+				<p>My name is Farhan Sabili, called Billy</p>
+				<p>I was born in Serang, Banten</p>
+				<p>Since 11 April 2000</p>
+				<p>Just a IT Addict.</p>
+				<center><img src="img/profile.jpg" class="img-profile"></center>
 			</div>
-			<div class="col-md-12 text-center">
-				<button type="button" class=" btn-lg btn-work">Contact</button>
+
+			<div class="col-xs-6">
+				<img src="img/profile-hp.jpg" class="img-profile-hp">
+			</div>
+			
+			<!-- Skill Bar -->
+			<div class="col-md-8 col-sm-8 col-xs-12">
+				<h2 class="text-center">SKILLS</h2>
+				<div class="skillbar-item">
+					<div class="skillbar-score">
+						<span class="score">83</span><span class="percent">%</span>
+					</div>
+					<div class="skillbar" data-percent="83%">
+						<h3>HTML</h3>
+						<div class="skillbar-bar">
+							<div class="skillbar-percent" style="width: 83%;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="skillbar-item">
+					<div class="skillbar-score">
+						<span class="score">85</span><span class="percent">%</span>
+					</div>
+					<div class="skillbar" data-percent="85%">
+						<h3>CSS</h3>
+						<div class="skillbar-bar">
+							<div class="skillbar-percent" style="width: 85%;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="skillbar-item">
+					<div class="skillbar-score">
+						<span class="score">75</span><span class="percent">%</span>
+					</div>
+					<div class="skillbar" data-percent="75%">
+						<h3>Bootstrap</h3>
+						<div class="skillbar-bar">
+							<div class="skillbar-percent" style="width: 75%;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="skillbar-item">
+					<div class="skillbar-score">
+						<span class="score">63</span><span class="percent">%</span>
+					</div>
+					<div class="skillbar" data-percent="63%">
+						<h3>Networking</h3>
+						<div class="skillbar-bar">
+							<div class="skillbar-percent" style="width: 63%;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="skillbar-item">
+					<div class="skillbar-score">
+						<span class="score">72</span><span class="percent">%</span>
+					</div>
+					<div class="skillbar" data-percent="72%">
+						<h3>Communication</h3>
+						<div class="skillbar-bar">
+							<div class="skillbar-percent" style="width: 72%;"></div>
+						</div>
+					</div>
+				</div>
+				<center><button type="button" class="mt-30 btn-lg btn-biodata">Click Here to See Biodata</button></center>
 			</div>	
+			<!-- End Skillbar -->
 		</div>			
 	</div>
 	<!-- End About -->
 
-	<!-- Skills -->
-	<div class="container-fluid skills">
-		<h1 class="text-center">SKILLS</h1>
-		<hr class="line"></hr>
-		<div class="row">
-			<div class="col-sm-6 col-md-offset-1 col-md-4">
-				<img src="img/skills.png" class="img-responsive">
-			</div>
-			<div class="progress-skills col-sm-6 col-md-6">
-				<div class="progress">
-				  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-				    Frontend Programming
-				  </div>
-				</div>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
-				    IT Networking
-				  </div>
-				</div>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-				    IT Support
-				  </div>
-				</div>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 63%">
-				    Blogging
-				  </div>
-				</div>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 69%">
-				    Music
-				  </div>
-				</div>
-			</div>
-		</div>		
-	</div>		
-	<!-- End Skills -->
-
+	
 	<!-- Hobby -->
-	<div class="container-fluid hobby">
-		<h1 class="text-center">HOBBY</h1>
-		<hr class="line"></hr>
-		<div class="row thumbnail-hobby">
-		  <div class="col-xs-12 col-sm-4 col-md-4">
-		    <a href="#" class="">
-		      <img src="img/thumb1.jpg" class="img-hobby img-responsive">
-		    </a>
-		  </div>
-		  <div class="col-xs-12 col-sm-4 col-md-4">
-		    <a href="#" class="">
-		      <img src="img/thumb2.jpg" class="img-hobby img-responsive">
-		    </a>
-		  </div>
-		  <div class="col-xs-12 col-sm-4 col-md-4">
-		    <a href="#" class="">
-		      <img src="img/thumb3.jpg" class="img-hobby img-responsive">
-		    </a>
-		  </div>	
+	<div class="container-fluid hobby" id="hobby">
+		<h1 class="text-center">SMEKSA NADA</h1>
+		<div class="col-md-3 music text-center">
+			<h1>Listen Our Music</h1>
+			<h2>Smeksa Nada - Bisa Dibilang Begitu</h2>
+			<audio src="song/bdb.mp3" controls></audio>
+			<h2>Smeksa Nada - Kecewa</h2>
+			<audio src="song/kecewa.mp3" controls></audio>
+			<h2>Smeksa Nada - Lukaku</h2>
+			<audio src="song/lukaku.mp3" controls></audio>
+			<h2>Smeksa Nada - Lepaskan</h2>
+			<audio src="song/lepaskan.mp3" controls></audio>
+			<h2>Smeksa Nada - Rasa</h2>
+			<audio src="song/rasa.mp3" controls></audio>
+		</div>
+		<div class="text-center mt-30">
+			<div class="col-md-3 col-sm-4 col-xs-12 thumb-hobby">
+				<img src="img/papih.jpg" class="img-circle">
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6 thumb-hobby">
+				<img src="img/ndu.jpg" class="img-circle">
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6 thumb-hobby">
+				<img src="img/moth.jpg" class="img-circle">
+			</div>
+			<div class="col-md-3 col-sm-4 col-sm-offset-1 col-md-offset-1 col-xs-6 thumb-hobby">
+				<img src="img/billy.jpg" class="img-circle">
+			</div>
+			<div class="col-md-3 col-sm-4 col-sm-offset-1 col-md-offset-1 col-xs-6 thumb-hobby">
+				<img src="img/slash.jpg" class="img-circle">
+			</div>
+			<div class="col-md-9 col-sm-12 mt-40 mb-10 thumb-hobby">
+				<a href="https://www.youtube.com/channel/UCb97csqdjp_uLBciVZewIqw" target="blank"><button type="button" class="btn btn-lg btn-danger">Subscribe on Youtube!</button></a>
+			</div>
+		</div>
 	</div>
 	<!-- End Hobby -->
 
 	<!-- Contact -->
-	<div class="container-fluid contact">
-		<h1 class="text-center">CONTACT</h1>
-		<hr class="line"></hr>
-		<div class="row img-contact">
-			<div class="col-md-4">
-				<img src="img/telpon.png" class="img-responsive">
-				<h2>No. HP: 085920177995</h2>
+	<div class="container-fluid contact" id="contact">
+		<h1 class="text-center">Let's Get In Touch</h1>
+		<div class="row img-contact text-center mt-40">
+			<div class="col-md-4 col-sm-4">
+				<img src="img/call.png" class="img-responsive">
+				<h2>085920177995</h2>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-4">
 				<img src="img/line.png" class="img-responsive">
-				<h2 class="line">Line: aansabili</h2>
+				<h2 class="line">@aansabili</h2>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-4">
 				<img src="img/email.png" class="img-responsive">
-				<h2>Email: sabilifarhan@gmail.com</h2>
+				<h2>sabilifarhan@gmail.com</h2>
+			</div>
+			<div class="sosmed">
+				<div class="col-md-12 mt-50">
+					<a href="http://www.instagram.com/billy.lvn" target="blank"><img src="img/ig.png" class="img-sosmed"></a>
+					<a href="http://www.facebook.com/farhan7b" target="blank"><img src="img/fb.png" class="img-sosmed"></a>
+					<a href="http://www.twitter.com/aansabili" target="blank"><img src="img/twitter.png" class="img-sosmed"></a>
+				</div>
 			</div>
 		</div>	
 	</div>
 	<!-- End Contact -->
-	
+
+
+	<div class="footer container-fluid">
+		<div class="row">
+			<h1>Created with bismillah by <a href="http://www.instagram.com/billy.lvn" target="blank">billylvn</a> Design 2019</h1>
+		</div>	
+	</footer>
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/style.js"></script>
+	<script src="js/jquery-easing/jquery.easing.min.js"></script>
+	<!-- End Javascript -->
+
 </body>
 </html>
