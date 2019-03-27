@@ -545,9 +545,9 @@ table {
 	font-family: 'Ubuntu', sans-serif;
 }
 .hobby {
-  background: -webkit-linear-gradient(rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../img/hobby.jpg);
-  background: -o-linear-gradient(rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../img/hobby.jpg);
-  background: -moz-linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../img/hobby.jpg);
+  -webkit-background: linear-gradient(rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../img/hobby.jpg);
+  -o-background: linear-gradient(rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../img/hobby.jpg);
+  -moz-background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../img/hobby.jpg);
   background: linear-gradient(rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../img/hobby.jpg);
   height: auto;
   background-attachment: fixed;
