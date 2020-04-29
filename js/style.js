@@ -1,10 +1,15 @@
 // Parallax
+$(window).on('load', function(){
+  $('.hAwal').addClass('hToggle');
+  $('.hAkhir').addClass('hToggle');
+});
+
 
 $(window).scroll(function() 
   {
     var wScroll = $(this).scrollTop();
-    console.log(wScroll); /* Mengetahui jarak ketika scrolling */
-    if(wScroll) 
+    //console.log(wScroll); /* Mengetahui jarak ketika scrolling */
+    if(wScroll > 100) 
     {
       $('.navbar-menu').addClass('black');
     }

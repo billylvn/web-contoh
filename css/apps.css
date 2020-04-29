@@ -65,6 +65,21 @@ table {
 /* Font End */
 
 /* NAVBAR */
+.title-brand {
+	float: left;
+	padding: 15px 15px;
+	line-height: 20px;
+	background: #E00A0A;
+}
+
+.title-brand:hover,
+.title-brand:focus,
+.title-brand:active {
+	text-decoration: none;
+}
+
+
+
 .navbar-menu a {
 	text-decoration-style: none;
 	color: white;
@@ -85,7 +100,7 @@ table {
 }
 
 .navbar-menu {
-	background-color: transparent;
+	background-color: rgba(0,0,0,.30);
 	transition: .5s;
 
 }
@@ -161,15 +176,69 @@ table {
 	margin-top: 50px;
 }
 
+.mt-50 {
+	margin-top: 50px;
+}
+
+.mt-60 {
+	margin-top: 60px;
+}
+
+.mt-70 {
+	margin-top: 70px;
+}
+
+.mt-80 {
+	margin-top: 80px;
+}
+
+.mt-90 {
+	margin-top: 90px;
+}
+
 .mb-10 {
 	margin-bottom: 10px;
+}
+
+.pb-10 {
+	padding-bottom: 10px;
+}
+
+.pb-20 {
+	padding-bottom: 20px;
+}
+
+.pb-30 {
+	padding-bottom: 30px;
+}
+
+.pb-40 {
+	padding-bottom: 40px;
+}
+
+.pb-50 {
+	padding-bottom: 50px;
+}
+
+.pb-60 {
+	padding-bottom: 60px;
 }
 
 /* End Helper */
 
 /* Header */
+.hAwal, .hAkhir {
+	opacity: 0;
+	transition: 5s;
+}
+
+.hAwal.hToggle, .hAkhir.hToggle {
+	opacity: 1;
+}
+
+
 .header {
-  background:  linear-gradient(rgba(0,0,0,.40), rgba(0, 0, 0, .80)), url(../img/bg-head.jpg);
+  background:  linear-gradient(rgba(0,0,0,.40), rgba(0, 0, 0, .50)), url(../img/bg-head.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: auto;
@@ -178,118 +247,79 @@ table {
   background-position: center center;
   background-size: cover;
   padding: 30px;
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
-.profile-text h1 {
-	color: rgba(255,255,255,.90);
-	text-shadow: 5px 5px 5px rgba(0,0,0,.60);
-	font-family: 'Open Sans', arial;
-	font-size: 25px;
-	font-weight: bold;
+.bio-head {
+	margin: 250px 0;
+}
+
+@media (min-width: 0) {
+	.bio-head h1 {
+	font-family: 'Ubuntu';
+	color: white;
+	margin-top: -160px;
+	text-shadow: 5px 5px 10px rgba(0,0,0,.50);
+	font-size: 35px;
 	text-align: center;
-	padding-bottom: 30px;
-}
-
-.profile-text p {
-	color: rgba(255,255,255,.90);
-	text-shadow: 5px 5px 5px rgba(0,0,0,.60);
-	font-family: 'Open Sans', arial;
-	font-size: 15px;
-	line-height: 2px;
-	font-weight: bold;
-	padding-bottom: 50px;	 
-	text-align: center;
-}
-
-@media (min-width: 320px) {
-	.profile-text h1 {
-		color: rgba(255,255,255,.90);
-		text-shadow: 5px 5px 5px rgba(0,0,0,.60);
-		font-family: 'Open Sans', arial;
-		font-size: 30px;
-		font-weight: bold;
-		text-align: center;
 	}
-	.profile-text p {
-		color: rgba(255,255,255,.90);
-		text-shadow: 5px 5px 5px rgba(0,0,0,.60);
-		font-family: 'Open Sans', arial;
-		font-size: 15px;
-		line-height: 2px;
-		font-weight: bold;
-		padding-bottom: 50px;	 
+
+	.bio-head h2 {
+		font-family: 'Ubuntu';
+		color: white;
+		text-shadow: 5px 5px 10px rgba(0,0,0,.50);
+		font-size: 20px;
 		text-align: center;
+		line-height: 5px;
 	}
 }
 
 @media (min-width: 480px) {
-	.profile-text h1 {
-		color: rgba(255,255,255,.90);
-		text-shadow: 5px 5px 5px rgba(0,0,0,.60);
-		font-family: 'Open Sans', arial;
-		font-size: 40px;
-		font-weight: bold;	
-		padding-left: 30px;
-		text-align: center;
+	.bio-head h1 {
+	font-family: 'Ubuntu';
+	color: white;
+	margin-top: -160px;
+	text-shadow: 5px 5px 10px rgba(0,0,0,.50);
+	font-size: 70px;
+	line-height: 100px;
+	text-align: center;
 	}
-	.profile-text p {
-		color: rgba(255,255,255,.90);
-		text-shadow: 5px 5px 5px rgba(0,0,0,.60);
-		font-family: 'Open Sans', arial;
-		font-size: 20px;
-		line-height: 2px;
-		font-weight: bold;
-		padding-bottom: 50px;	 
+
+	.bio-head h2 {
+		font-family: 'Ubuntu';
+		color: white;
+		text-shadow: 5px 5px 10px rgba(0,0,0,.50);
+		font-size: 26px;
 		text-align: center;
+		line-height: 5px;
+		letter-spacing: 5px;
 	}
+
 }
 
 @media (min-width: 768px) {
-	.profile-text h1 {
-		color: rgba(255,255,255,.90);
-		text-shadow: 5px 5px 5px rgba(0,0,0,.60);
-		font-family: 'Open Sans', arial;
-		font-size: 50px;
-		font-weight: bold;	
-		padding-left: 30px;
-		padding-top: 50px;
-		text-align: center;
+	.bio-head h1 {
+	font-family: 'Ubuntu';
+	color: white;
+	margin-top: -50px;
+	text-shadow: 5px 5px 10px rgba(0,0,0,.50);
+	font-size: 120px;
+	line-height: 100px;
+	text-align: center;
 	}
-	.profile-text p {
-		color: rgba(255,255,255,.90);
-		text-shadow: 5px 5px 5px rgba(0,0,0,.60);
-		font-family: 'Open Sans', arial;
-		font-size: 25px;
-		line-height: 2px;
-		font-weight: bold;
-		padding-bottom: 100px;	 
+
+	.bio-head h2 {
+		font-family: 'Ubuntu';
+		color: white;
+		text-shadow: 5px 5px 10px rgba(0,0,0,.50);
+		font-size: 26px;
 		text-align: center;
+		line-height: 10px;
+		letter-spacing: 20px;
 	}
+
 }
 
-@media (min-width: 1200px) {
-	.profile-text h1 {
-		color: rgba(255,255,255,.90);
-		text-shadow: 5px 5px 5px rgba(0,0,0,.60);
-		font-family: 'Open Sans', arial;
-		font-size: 80px;
-		font-weight: bold;
-		padding-top: 100px;	
-		padding-left: 30px; 
-		text-align: center;
-	}
-	.profile-text p {
-		color: rgba(255,255,255,.90);
-		text-shadow: 5px 5px 5px rgba(0,0,0,.60);
-		font-family: 'Open Sans', arial;
-		font-size: 40px;
-		line-height: 5px;
-		font-weight: bold;
-		padding-bottom: 150px;	 
-		text-align: center;
-	}
-}
 /* Header Done */
 
 
@@ -422,16 +452,12 @@ table {
 
 }
 
-.page-scroll {
-	transition: .5s;
-}
-
 
 .btn-biodata {
-  color: #fff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  color: white;
+  background-color: transparent;
   font-family: 'PT Sans', sans-serif;
+  transition: .5s;
 }
 .btn-biodata:focus,
 .btn-biodata.focus {
@@ -508,6 +534,41 @@ table {
 }
 /* Skills Done */
 
+/* Work Exp */
+.about h4 {
+	color: black;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.job {
+	border: 2px solid rgba(0,0,0,.70);
+	text-align: center;
+	padding: 20px;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,.60);
+}
+
+.job img {
+	max-width: 100%;
+	height: auto;
+	width: 100px;
+}
+
+.job h1 {
+	font-size: 20px;
+	margin-top: -15px;
+
+}
+
+.job p {
+	font-size: 16px;
+}
+
+
+/* Work Exp Done*/
+
 /* Hobby */
 .hobby .thumb-hobby {
 	opacity: 0;
@@ -582,9 +643,10 @@ table {
   padding-bottom: 50px;
 }
 .contact h1 {
-	padding-top: 50px;
+	padding-top: 35px;
 	color: black;
-	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-family: "Ubuntu";
 	text-shadow: 5px 5px 5px rgba(255,255,255,.10);
 }
 
@@ -599,24 +661,44 @@ table {
 
 .img-contact h2 {
 	font-size: 20px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+.text-sosmed {
+	padding: 10px;
+	margin-top: -30px;
+}
+.text-sosmed h1 {
+	font-family: 'Ubuntu';
+
+}
+
+.sosmed {
+	background-color: #F2F2F2;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.50);
+	border-radius: 100px;
+
 }
 
 .sosmed img {
-	max-width: 100%;
-	height: auto;
-	width: 50px;
 	display: inline-block;
-	text-align: center;
+	width: 50px;
+	padding: 10px 15px;
+	transition: .3s;
 }
 
-.img-sosmed {
-	transition: .2s;
+.sosmed img:hover,
+.sosmed img:focus {
+	width: 60px;
+	filter: drop-shadow(1px 1px rgba(0,0,0,.50));
 }
 
-.img-sosmed:hover {
-	filter: drop-shadow(1px 1px 1px black);
-}
+
+/* End Contact */
+
+
+/* Footer */
 
 .footer {
 	max-width: 100%;
@@ -625,7 +707,7 @@ table {
 
 .footer h1 {
 	font-family: 'Ubuntu';
-	font-size: 10px;
+	font-size: 12px;
 	background-color: black;
 	color: white;
 	padding: 10px;
@@ -650,7 +732,7 @@ table {
 	font-size: 16px;
 	background-color: black;
 	color: white;
-	padding: 10px;
+	padding: 15px;
 	margin: 0;
 	text-align: center;
 	}
@@ -666,6 +748,31 @@ table {
 		text-decoration: none;
 	}
 }	
+/* End Footer */
+
+/* Content */
+
+.content {
+	background-color: white;
+	box-shadow: 5px 5px 10px rgba(0,0,0,.50);
+	margin-top: 50px;
+	font-family: 'Ubuntu';
+}
+
+.head-bio {
+	margin: 20px;
+}
+
+.img-bio {
+	box-shadow: 2px 2px 5px rgba(0,0,0,.50);
+
+}
+
+.text-bio {
+	text-align: justify;
+
+}
+
 
 
 
